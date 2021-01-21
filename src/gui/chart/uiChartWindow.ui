@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChartWindow</class>
+ <widget class="QMainWindow" name="ChartWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ChartWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>498</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menusave">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <widget class="QMenu" name="menuexportar">
+     <property name="title">
+      <string>Exportar</string>
+     </property>
+     <addaction name="actioncsv"/>
+    </widget>
+    <addaction name="menuexportar"/>
+   </widget>
+   <addaction name="menusave"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actioncsv">
+   <property name="text">
+    <string>CSV</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
